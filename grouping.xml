@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Utils.ExtentReportManager"></listener>
+	</listeners>
+	
+	
+	
+	<test thread-count="4" name="ChromeTest">
+		
+		<parameter name="os" value="Windows" />
+		<parameter name="browser" value="chrome" />
+		
+		<groups>
+			<run>
+				<include name="smoke"/>
+				<!--<include name="master"/>-->
+				<!--<include name="regression"/>-->
+			</run>
+		</groups>
+		
+		
+		<classes>
+			<class name="TestCase.TestCase1_UpcomingBikeDetails" />
+			<class name="TestCase.TestCase2_UsedCarsDetails" />
+			<class name="TestCase.TestCase3_GoogleLogin" />
+			<class name="TestCase.TestCase4_GoogleSignup" />
+		</classes>
+	</test>
+	</suite>

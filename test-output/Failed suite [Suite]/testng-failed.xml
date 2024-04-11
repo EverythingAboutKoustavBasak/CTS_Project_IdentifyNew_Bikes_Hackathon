@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utils.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest(failed)(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestCase.TestCase4_GoogleSignup">
+        <methods>
+          <include name="verifyLoginPage"/>
+          <include name="invokeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TestCase4_GoogleSignup -->
+    </classes>
+  </test> <!-- ChromeTest(failed)(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="TestCase.TestCase1_UpcomingBikeDetails">
+        <methods>
+          <include name="clickUpcomingBikes"/>
+          <include name="invokeBrowser"/>
+          <include name="clickNewBikes"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TestCase1_UpcomingBikeDetails -->
+      <class name="TestCase.TestCase3_GoogleLogin">
+        <methods>
+          <include name="invokeBrowser"/>
+          <include name="verifyLoginPage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TestCase3_GoogleLogin -->
+      <class name="TestCase.TestCase4_GoogleSignup">
+        <methods>
+          <include name="verifyLoginPage"/>
+          <include name="invokeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TestCase4_GoogleSignup -->
+      <class name="TestCase.TestCase2_UsedCarsDetails">
+        <methods>
+          <include name="UsedCarDetails"/>
+          <include name="invokeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TestCase2_UsedCarsDetails -->
+    </classes>
+  </test> <!-- EdgeTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
